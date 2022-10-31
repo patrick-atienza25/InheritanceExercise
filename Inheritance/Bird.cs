@@ -12,10 +12,17 @@ namespace Inheritance
         public Bird()
         {
         }
-        public bool HasFeathers { get; set; }
-        public bool CanFly { get; set; }
-        public bool IsColorful { get; set; }
-        public bool LaysEggs { get; set; }
+        public bool HasFeathers { get; set; } = true;
+        public string Color { get; set; }
+        public string FavoriteFood { get; set; }
+        public int HowManyWings { get; set; }
 
+        public void PrintMembers()
+        {
+            Console.WriteLine($"Toucans favorite food is {FavoriteFood}!");
+            Console.WriteLine($"Most toucans are colored {Color}.");
+            Console.WriteLine($"Toucans are birds so they have {HowManyWings} wings.");
+            Console.WriteLine($"Do toucans have feathers? Answer: {HasFeathers}.");
+        }
     }
 }

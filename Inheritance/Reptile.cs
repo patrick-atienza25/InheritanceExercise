@@ -14,8 +14,16 @@ namespace Inheritance
 
         public bool IsColdBlooded { get; set; }
         public bool Sheds { get; set; }
-        public bool EatsFlies { get; set; }
-        public bool HasSpikes { get; set; }
+        public string FavoriteFood { get; set; }
+        public bool HasScales { get; set; } = true;
+
+        public void PrintMembers()
+        {
+            Console.WriteLine($"True or false: All reptiles are cold blooded. Answer: {IsColdBlooded}.");
+            Console.WriteLine($"True or false: Komodo dragons shed. Answer: {Sheds}.");
+            Console.WriteLine($"Komodo dragons favorite food is {FavoriteFood}");
+            Console.WriteLine($"True or false: Komodo dragons have scales. Answer: {HasScales}");
+        }
 
     }
 }

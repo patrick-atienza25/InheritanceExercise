@@ -33,17 +33,24 @@ namespace Inheritance
              */
 
             Bird Toucan = new Bird();
-            Toucan.HasFourLegs = false;
-            Toucan.CanFly = true;
-            Toucan.LaysEggs = true;
-            Toucan.HasFeathers = true;
-            Toucan.IsColorful = true;
-            Toucan.Sound = "CAW CAWWW";
-            Console.WriteLine("What sound does a toucan make?");
-            Console.WriteLine($"The toucan makes the sound {Toucan.Sound}!");
-
-            Console.WriteLine("Which of the follwing are true?");
+            {
+                Toucan.FavoriteFood = "Banana";
+                Toucan.HasFeathers = true;
+                Toucan.HowManyWings = 2;
+                Toucan.Color = "Black";
+                Toucan.Sound = "Caw Cawww";
             }
+
+            Reptile KomodoDragon = new Reptile()
+            {
+                FavoriteFood = "Flies",
+                HasScales = true,
+                Sheds = true,
+                IsColdBlooded = true,
+            };
+
+            KomodoDragon.PrintMembers();
+            Toucan.PrintMembers();
         }
     }
 }
