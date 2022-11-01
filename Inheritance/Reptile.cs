@@ -12,17 +12,17 @@ namespace Inheritance
         {
         }
 
-        public bool IsColdBlooded { get; set; }
-        public bool Sheds { get; set; }
+        public string TongueKind { get; set; }
+        public string Grow { get; set; }
         public string FavoriteFood { get; set; }
-        public bool HasScales { get; set; } = true;
+        public string Movement { get; set; }
 
         public void PrintMembers()
         {
-            Console.WriteLine($"True or false: All reptiles are cold blooded. Answer: {IsColdBlooded}.");
-            Console.WriteLine($"True or false: Komodo dragons shed. Answer: {Sheds}.");
+            Console.WriteLine($"Komodo dragons have {TongueKind} tongues.");
+            Console.WriteLine($"As komodo dragons get bigger they begin to {Grow}.");
             Console.WriteLine($"Komodo dragons favorite food is {FavoriteFood}");
-            Console.WriteLine($"True or false: Komodo dragons have scales. Answer: {HasScales}");
+            Console.WriteLine($"Komodo dragons don't walk, they {Movement}");
         }
 
     }

@@ -32,25 +32,31 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Console.WriteLine("Some random facts about Toucans:");
+            
+
             Bird Toucan = new Bird();
             {
                 Toucan.FavoriteFood = "Banana";
-                Toucan.HasFeathers = true;
+                Toucan.LivesWhere = "Rain Forests";
                 Toucan.HowManyWings = 2;
                 Toucan.Color = "Black";
                 Toucan.Sound = "Caw Cawww";
             }
+            Toucan.PrintMembers();
+            Console.WriteLine();
 
+            Console.WriteLine("Random facts about komodo dragons:");
             Reptile KomodoDragon = new Reptile()
             {
                 FavoriteFood = "Flies",
-                HasScales = true,
-                Sheds = true,
-                IsColdBlooded = true,
+                Grow = "shed",
+                Movement = "waddles",
+                TongueKind = "forked",
             };
-
             KomodoDragon.PrintMembers();
-            Toucan.PrintMembers();
+
+
         }
     }
 }

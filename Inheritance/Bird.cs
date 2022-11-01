@@ -12,7 +12,7 @@ namespace Inheritance
         public Bird()
         {
         }
-        public bool HasFeathers { get; set; } = true;
+        public string LivesWhere { get; set; }
         public string Color { get; set; }
         public string FavoriteFood { get; set; }
         public int HowManyWings { get; set; }
@@ -21,8 +21,8 @@ namespace Inheritance
         {
             Console.WriteLine($"Toucans favorite food is {FavoriteFood}!");
             Console.WriteLine($"Most toucans are colored {Color}.");
-            Console.WriteLine($"Toucans are birds so they have {HowManyWings} wings.");
-            Console.WriteLine($"Do toucans have feathers? Answer: {HasFeathers}.");
+            Console.WriteLine($"Toucans have {HowManyWings} wings.");
+            Console.WriteLine($"Toucans live mainly in {LivesWhere}.");
         }
     }
 }
